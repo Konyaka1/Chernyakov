@@ -10,6 +10,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
+
 On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -17,3 +18,23 @@ Untracked files:
         task1/
 
 nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+commit 00624656fc868daa76dd9d48675d04fa413b73bd (HEAD -> master, origin/master, origin/HEAD)
+Author: Chernyakov <alexey.chernyakov00@gmail.com>
+Date:   Thu Feb 14 00:16:40 2019 +0300
+
+    add task1/log.txt
+
+commit 05232f1a62511706cd75562f9867218b7c143120
+Author: Chernyakov <alexey.chernyakov00@gmail.com>
+Date:   Thu Feb 14 00:14:13 2019 +0300
+
+    add task1/status.txt
+
+commit de2c59fb055b12119f6886e1b8c5063dc1f37f87
+Author: Chernyakov <alexey.chernyakov00@gmail.com>
+Date:   Thu Feb 14 00:11:19 2019 +0300
+
+    add .gitignore
