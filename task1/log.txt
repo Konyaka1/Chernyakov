@@ -1,0 +1,11 @@
+commit 05232f1a62511706cd75562f9867218b7c143120 (HEAD -> master)
+Author: Chernyakov <alexey.chernyakov00@gmail.com>
+Date:   Thu Feb 14 00:14:13 2019 +0300
+
+    add task1/status.txt
+
+commit de2c59fb055b12119f6886e1b8c5063dc1f37f87
+Author: Chernyakov <alexey.chernyakov00@gmail.com>
+Date:   Thu Feb 14 00:11:19 2019 +0300
+
+    add .gitignore
