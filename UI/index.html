@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Dogland">
+    <meta name="keywords" content="Dogland, Фотопортал, Сайт Лехи, Лучший сайт на планете">
     <title>Dogland</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="header">
-    <div id="header-content">
+<header class="header">
+    <div class="header-content">
         <div id="logo" class="fl_l">
-            <h1>Dogland</h1>
+            <a href="index.html" class="logo-btn">
+                <b>Dogland</b>
+            </a>
         </div>
-        <div id="posting-btn" class="fl_r">
-            <a href="index.html" id="posting">
+        <div id="post-btn" class="fl_r">
+            <a href="index.html" class="btn">
                 Add your post
             </a>
         </div>
         <div id="auth-btn" class="fl_r">
-            <a href="index.html" id="btn">
+            <a href="index.html" class="btn">
                 Sign in
             </a>
         </div>
     </div>
 </header>
-<div id="page-body">
-    <div id="filters">
-        <form action="index.html" onclick="" id="inputs">
+<div class="page-body">
+    <div class="filters">
+        <form action="index.html" onclick="" class="inputs">
             <input type="text" size="20" name="search-by-name" class="search" placeholder="by name">
             <input type="text" size="20" name="search-by-date" class="search" placeholder="by date">
             <input type="text" size="20" name="search-by-tag" class="search" placeholder="by tag">
             <input type="submit" value="search" class="search-btn">
         </form>
     </div>
-    <div id="feed">
+    <div class="feed">
         <div class="post-row">
             <h1 class="post-title">Title #1</h1>
             <p class="post-date">02.03.2019 13:12</p>
@@ -250,8 +254,8 @@
 </div>
 
 
-<footer id="footer">
-    &copy; lyoha. 2019
+<footer class="footer">
+    &copy; Lyoha. 2019
 </footer>
 </body>
 </html>
