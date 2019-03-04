@@ -69,7 +69,30 @@ body {
 #page-body #filters{
     width: 100%;
     height: 22px;
-    position: relative;
+    position: fixed;
+    top: 80px;
+    z-index: 1;
+    margin-right: 0;
+}
+
+#page-body #filters .search{
+    width: 150px;
+    height: 30px;
+}
+
+#page-body #filters .search-btn{
+    padding: 8px 20px;
+    background: #dfd7e2;
+    border: 1px solid #454147;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #454147;
+}
+
+#page-body #filters .search-btn{
+    line-height: 17px;
 }
 
 #page-body #feed {}
