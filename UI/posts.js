@@ -186,7 +186,7 @@ let postModule = (function () {
 
     let filter = undefined;
 
-    let array = posts;
+    let array = photoPosts;
 
     let sortByDate = (o1, o2) =>
     {
