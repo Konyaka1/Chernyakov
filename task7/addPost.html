@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dogland">
+    <meta name="keywords" content="Dogland, Фотопортал, Сайт Лехи, Лучший сайт на планете">
+    <title>Dogland</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="PostsList.js"></script>
+    <script src="posting.js"></script>
+</head>
+<body onload="scriptPosting.firstScript()">
+<header class="header">
+    <div class="header-content">
+        <div id="logo" class="fl_l">
+            <a href="index.html" class="logo-btn">
+                <b>Dogland</b>
+            </a>
+        </div>
+        <div id="not-auth-btn" class="fl_r" onclick="scriptPosting.logOut()">
+            <a class="btn">
+                Sign out
+            </a>
+        </div>
+        <div id="username" class="fl_r">
+
+        </div>
+    </div>
+</header>
+<div class="page-posting">
+    <div>
+        <div class="post-container">
+            <div id="preview" class="fl_l">
+
+            </div>
+            <div id="form" class="fl_r">
+                <div class="photo">
+                    <label>Photo:</label>
+                    <input type="file" id="real-btn" accept="image/*" hidden="hidden"/>
+                    <button type="button" id="custom-btn">Choose file</button>
+                    <span id="custom-text">No file chosen, yet</span>
+                </div>
+                <div class="text-post">
+                    <div class="text">
+                        <textarea id="description" placeholder="Add description" rows="7" cols="46"></textarea>
+                    </div>
+                    <div>
+                        <input id="tags" type="text" placeholder="hashtags"/>
+                    </div>
+                    <div onclick="scriptPosting.tryPost()" class="add-btn">
+                        <input type="submit" value="add post"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    &copy; Lyoha. 2019
+</footer>
+</body>
+</html>

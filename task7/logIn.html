@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dogland">
+    <meta name="keywords" content="Dogland, Фотопортал, Сайт Лехи, Лучший сайт на планете">
+    <title>Dogland</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="login.js"></script>
+</head>
+<body onload="loginModule.check()">
+<header class="header">
+    <div class="header-content">
+        <div id="logo" class="fl_l">
+            <a href="index.html" class="logo-btn">
+                <b>Dogland</b>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="page-login">
+    <div class="form-login">
+        <div class="login">
+            <h1>Hello!</h1>
+            <div class="input">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="login"/>
+            </div>
+            <div class="input">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="password"/>
+            </div>
+            <div class="input-btn" onclick="loginModule.tryLog()">
+                <input type="submit" class="button" value="sign up">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    &copy; Lyoha. 2019
+</footer>
+</body>
+</html>
