@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dogland">
+    <meta name="keywords" content="Dogland, Фотопортал, Сайт Лехи, Лучший сайт на планете">
+    <title>Dogland</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="resources/js/data.js"></script>
+    <script src="resources/js/posts.js"></script>
+    <script src="resources/js/PostsList.js"></script>
+    <script src="resources/js/script.js"></script>
+</head>
+<body onload="scriptModule.firstOpen()">
+<header class="header">
+    <div class="header-content">
+        <div id="logo" class="fl_l">
+            <a href="index.html" class="logo-btn">
+                <b>Dogland</b>
+            </a>
+        </div>
+        <div id="post-btn" class="fl_r">
+            <a class="btn" onclick="scriptModule.posting()">
+                Add your post
+            </a>
+        </div>
+        <div id="auth-btn" class="fl_r" hidden="true">
+            <a href="WEB-INF/logIn.html" class="btn">
+                Sign in
+            </a>
+        </div>
+        <div id="not-auth-btn" class="fl_r" hidden="true" onclick="scriptModule.logOut()">
+            <a class="btn">
+                Sign out
+            </a>
+        </div>
+        <div id="username" class="fl_r" hidden="true">
+
+        </div>
+    </div>
+</header>
+<div class="page-body">
+    <div class="filters">
+            <input type="text" size="20" name="search-by-name" class="search" placeholder="by name">
+            <input type="text" size="20" name="search-by-date" class="search" placeholder="by date">
+            <input type="text" size="20" name="search-by-tag" class="search" placeholder="by tag">
+            <input type="submit" value="search" class="search-btn" onclick="scriptModule.search()">
+    </div>
+    <div class="feed">
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    &copy; Lyoha. 2019
+</footer>
+</body>
+</html>
