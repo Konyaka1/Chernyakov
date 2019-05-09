@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>ServletTask2</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletTask2</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletTask2</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletTask2</servlet-name>
@@ -15,7 +15,7 @@
 
     <servlet>
         <servlet-name>ServletTask1</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletTask1</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletTask1</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletTask1</servlet-name>
@@ -28,7 +28,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletStatus</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletStatus</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletStatus</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -37,7 +37,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletPage</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletPage</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletPage</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -46,7 +46,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletGet</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletGet</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletGet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -55,12 +55,12 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletCheck</servlet-name>
-        <servlet-class>bsu.fpmi.task8.ServletCheck</servlet-class>
+        <servlet-class>bsu.fpmi.task8.servlets.ServletCheck</servlet-class>
     </servlet>
     
     <servlet>
         <servlet-name>ServletPost</servlet-name>
-        <servlet-class>task9.servlet.com.ServletPost</servlet-class>
+        <servlet-class>bsu.fpmi.task9.servlets.ServletPost</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletPost</servlet-name>
@@ -69,16 +69,61 @@
     
     <servlet>
         <servlet-name>ServletPhotoPosts</servlet-name>
-        <servlet-class>task9.servlet.com.ServletPhotoPosts</servlet-class>
+        <servlet-class>bsu.fpmi.task9.servlets.ServletPhotoPosts</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletPhotoPosts</servlet-name>
         <url-pattern>/photoposts</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ServletUpload</servlet-name>
+        <servlet-class>bsu.fpmi.task9.servlets.ServletUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletUpload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletIndex</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletIndex</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletIndex</servlet-name>
+        <url-pattern>/getPosts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletError</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletError</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletError</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletAddPost</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletAddPost</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddPost</servlet-name>
+        <url-pattern>/addPost</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletPosting</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletPosting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletPosting</servlet-name>
+        <url-pattern>/posting</url-pattern>
+    </servlet-mapping>
+    
     <filter>
         <filter-name>ServletFilter</filter-name>
-        <filter-class>bsu.fpmi.task8.ServletFilter</filter-class>
+        <filter-class>bsu.fpmi.task8.filter.ServletFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>ServletFilter</filter-name>

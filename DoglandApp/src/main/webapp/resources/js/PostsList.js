@@ -28,7 +28,9 @@ class PostsList {
 
             if (!(filter.createdAt.toString() === 'Invalid Date')) {
                 tmp = tmp.filter((item) => {
-                    return Date.parse(item.createdAt) === Date.parse(filter.createdAt);
+                    return item.createdAt.getFullYear() === filter.createdAt.getFullYear() &&
+                        item.createdAt.getMonth() === filter.createdAt.getMonth() &&
+                        item.createdAt.getDate() === filter.createdAt.getDate();
                 });
             }
 

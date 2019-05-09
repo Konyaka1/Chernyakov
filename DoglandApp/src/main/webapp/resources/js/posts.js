@@ -2,7 +2,7 @@ let postModule = (function () {
 
     let filter = undefined;
 
-    let array = posts;
+    let array;
 
     let sortByDate = (o1, o2) =>
     {
@@ -133,5 +133,4 @@ let postModule = (function () {
         editPhotoPost,
         removePhotoPost
     }
-
 }());
