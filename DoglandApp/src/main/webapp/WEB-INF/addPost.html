@@ -34,25 +34,25 @@
             <div id="preview" class="fl_l">
 
             </div>
-            <div id="form" class="fl_r">
+            <form method="post" id="form" class="fl_r">
                 <div class="photo">
                     <label>Photo:</label>
-                    <input type="file" id="real-btn" accept="image/*" hidden="hidden"/>
+                    <input type="file" enctype="multipart/form-data" id="real-btn" name="fileName" accept="image/*" hidden="hidden"/>
                     <button type="button" id="custom-btn">Choose file</button>
                     <span id="custom-text">No file chosen, yet</span>
                 </div>
                 <div class="text-post">
                     <div class="text">
-                        <textarea id="description" placeholder="Add description" rows="7" cols="46"></textarea>
+                        <textarea id="description" name="description" placeholder="Add description" rows="7" cols="46"></textarea>
                     </div>
                     <div>
-                        <input id="tags" type="text" placeholder="hashtags"/>
+                        <input id="tags" name="tags" type="text" placeholder="hashtags"/>
                     </div>
-                    <div onclick="scriptPosting.tryPost()" class="add-btn">
+                    <div class="add-btn">
                         <input type="submit" value="add post"/>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="clr"></div>
         </div>
     </div>
