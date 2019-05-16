@@ -1,5 +1,11 @@
 # Chernyakov
-task9 is completed.
+Task9 is completed.
 
 
-Task10 is not completed. i need help with this task. i started doing but i'm not confident that im doing right
+Task10 is completed.
+
+
+Task11 is completed.
+
+
+Start doing task12.
