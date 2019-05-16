@@ -1,10 +1,5 @@
 package bsu.fpmi.task10.servlets;
 
-import bsu.fpmi.task9.logic.PhotoPosts;
-import bsu.fpmi.task9.logic.Post;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
@@ -23,8 +18,6 @@ public class ServletPosting extends HttpServlet {
 
     String editPost = "";
 
-    PhotoPosts posts = new PhotoPosts();
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().write(editPost + '\n');
@@ -39,7 +32,6 @@ public class ServletPosting extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String appPath = req.getServletContext().getRealPath("");
-        System.out.println("HERE");
         appPath = appPath.replace('\\', '/');
         String fullSavePath;
 
@@ -67,9 +59,7 @@ public class ServletPosting extends HttpServlet {
 
             part.write(filePath);
 
-            System.out.println("here");
-
-            resp.getWriter().write("/upload/" + fileName + '\n');
+            resp.getWriter().write("/upload/" + fileName + ".jpg");
         }
     }
 }

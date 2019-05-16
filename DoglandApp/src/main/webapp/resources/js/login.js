@@ -1,29 +1,16 @@
 loginModule = (function () {
 
-   let tryLog = () =>{
-       let log = document.getElementsByName('name')[0].value;
-       let pas = document.getElementsByName('password')[0].value;
-       let tmpUser = JSON.parse(localStorage.getItem('logins')).find((item) => item.login == log);
-       if (tmpUser === undefined)
-           alert("bad login");
-       else{
-           if (tmpUser.password === pas){
-               localStorage.removeItem('user');
-               localStorage.setItem('user', log);
-               window.open("index.html", "_self");
-           }else{
-               alert("bad password");
-           }
-       }
-   };
+    const xhr = new XMLHttpRequest();
 
-   let check = () =>{
-       if (!(localStorage.getItem('user') === 'guest'))
-           window.open("error.html", "_self");
-   };
+    let check = () => {
+        xhr.open("GET", "http://localhost:8080/session", false);
+        xhr.send();
+        let answer = xhr.responseText;
+        if (answer !== 'guest')
+            window.open("/error", "_self");
+    };
 
-   return{
-       tryLog,
-       check
-   }
+    return {
+        check
+    }
 }());

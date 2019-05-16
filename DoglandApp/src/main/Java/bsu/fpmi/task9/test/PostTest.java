@@ -11,11 +11,14 @@ public class PostTest {
         for (int i = 1; i < 17; i++) {
             Random random = new Random();
 
-            List<String> hashSet = new ArrayList<>();
-            hashSet.add("dog");
-            hashSet.add("my");
-            hashSet.add("rat");
-            hashSet.add("hiMark");
+            List<String> list = new ArrayList<>();
+            list.add("#dog");
+            list.add("#my");
+            list.add("#rat");
+            list.add("#hiMark");
+
+            List<String> listLikes = new ArrayList<>();
+            listLikes.add("ivan");
 
             int second = Math.abs(random.nextInt());
 
@@ -26,24 +29,24 @@ public class PostTest {
                     "USER",
                     "/upload/134028676.jpg",
                     date,
-                    new ArrayList<String>(),
-                    hashSet);
+                    listLikes,
+                    list);
             test.add(elem);
         }
         return test;
     }
 
     public static Post makePost() {
-        List<String> hashSet = new ArrayList<>();
-        hashSet.add("dog");
-        hashSet.add("new");
-        hashSet.add("hiMark");
-        hashSet.add("happy");
-        hashSet.add("nice");
+        List<String> list = new ArrayList<>();
+        list.add("#dog");
+        list.add("#new");
+        list.add("#hiMark");
+        list.add("#happy");
+        list.add("#nice");
         return new Post(Integer.toString(PhotoPosts.getLastId() + 1),
                 "DESCRIPTION NEW POST " + Integer.toString(PhotoPosts.getLastId() + 1),
                 "NEW USER",
                 "/upload/134028676.jpg",
-                new Date(), new ArrayList<String>(), hashSet);
+                new Date(), new ArrayList<String>(), list);
     }
 }

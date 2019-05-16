@@ -121,6 +121,35 @@
         <url-pattern>/posting</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>ServletLogIn</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletLogIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogIn</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Session</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletSession</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Session</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletLike</servlet-name>
+        <servlet-class>bsu.fpmi.task10.servlets.ServletLike</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletLike</servlet-name>
+        <url-pattern>/like</url-pattern>
+    </servlet-mapping>
+    
     <filter>
         <filter-name>ServletFilter</filter-name>
         <filter-class>bsu.fpmi.task8.filter.ServletFilter</filter-class>
