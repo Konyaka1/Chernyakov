@@ -54,7 +54,7 @@ public class ServletUpload extends HttpServlet {
         }
     }
 
-    @Override
+    /*@Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String appPath = req.getServletContext().getRealPath("");
         appPath = appPath.replace('\\', '/');
@@ -86,5 +86,5 @@ public class ServletUpload extends HttpServlet {
             part.write(filePath);
         }
         doGet(req, resp);
-    }
+    }*/
 }

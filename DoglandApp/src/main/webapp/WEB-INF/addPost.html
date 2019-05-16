@@ -14,7 +14,7 @@
 <header class="header">
     <div class="header-content">
         <div id="logo" class="fl_l">
-            <a href="../index.html" class="logo-btn">
+            <a href="/" class="logo-btn">
                 <b>Dogland</b>
             </a>
         </div>
@@ -34,12 +34,11 @@
             <div id="preview" class="fl_l">
 
             </div>
-            <form method="post" id="form" class="fl_r">
+            <form method="post" id="form" class="fl_r" enctype="multipart/form-data">
                 <div class="photo">
                     <label>Photo:</label>
-                    <input type="file" enctype="multipart/form-data" id="real-btn" name="fileName" accept="image/*" hidden="hidden"/>
+                    <input type="file" id="real-btn" name="fileName" accept="image/*" hidden="hidden"/>
                     <button type="button" id="custom-btn">Choose file</button>
-                    <span id="custom-text">No file chosen, yet</span>
                 </div>
                 <div class="text-post">
                     <div class="text">
@@ -48,7 +47,7 @@
                     <div>
                         <input id="tags" name="tags" type="text" placeholder="hashtags"/>
                     </div>
-                    <div class="add-btn">
+                    <div class="add-btn" onclick="scriptPosting.tryPost()">
                         <input type="submit" value="add post"/>
                     </div>
                 </div>

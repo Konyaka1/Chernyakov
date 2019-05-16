@@ -9,6 +9,10 @@ class PostsList {
         return Date.parse(o2.createdAt) - Date.parse(o1.createdAt);
     };
 
+    getArray = () => {
+        return this.array;
+    };
+
     getPage = (skip = 0, top = 10, filter) => {
 
         if (typeof skip !== "number" || typeof top !== "number") {
@@ -88,6 +92,10 @@ class PostsList {
         return false;
     };
 
+    removeAll = () => {
+        this.array.length = 0;
+    };
+
     static validate = (post) => {
         if (!post) {
             return false;
@@ -96,8 +104,6 @@ class PostsList {
             return false;
         }
         if (post.description === "" || typeof post.description !== "string")
-            return false;
-        if (!(post.createdAt instanceof Date))
             return false;
         if (post.author === "" || typeof post.author !== "string")
             return false;

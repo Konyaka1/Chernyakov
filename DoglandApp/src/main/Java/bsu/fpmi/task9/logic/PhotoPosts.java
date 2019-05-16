@@ -161,7 +161,7 @@ public class PhotoPosts {
             ArrayList<Post> tmp = new ArrayList<>();
             String[] check;
 
-            check = filter.get("author");
+            check = filter.get("user");
             if (check != null) {
                 tmp.addAll(getPostsAuthor(check[0]));
                 if (tmp.size() == 0)
